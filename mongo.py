@@ -1,5 +1,5 @@
 from mongoengine import *
-connect(host="mongodb+srv://pipechela:lufke1980@chimba.diz4m.mongodb.net/tumblelog?retryWrites=true&w=majority")
+connect(host="host")
 
 class User(Document):
     email = StringField(required=True)
@@ -20,3 +20,4 @@ class ImagePost(Post):
 
 class LinkPost(Post):
     link_url = StringField()
+
